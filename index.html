@@ -1,0 +1,87 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>RPG Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <header>
+        <h1> Star Wars!</h1>
+    </header>
+
+    <div class="chooseChar">
+        <p id="chooseCharPrompt">Choose Your Character:</p>
+        <hr>
+        <div class="fighterRow">
+            <div class="charCard" id="maul" data-health="70" data-attack-power="7" data-counter-power="13">
+                <p class="charName"> Darth Maul </p>
+                <img class="charImg"  src="assets/images/darth-maul.jpg" alt="darth maul" width="300px" height="200px">
+                <p class= "health">HP: </p>
+                <p class= "attack">Attack: </p>
+            </div>
+            <div class="charCard" id="yoda" data-health="90" data-attack-power="8" data-counter-power="15">
+                <p class="charName"> Yoda </p>
+                <img class="charImg"  src="assets/images/yoda.jpg" alt="yoda" width="300px" height="200px">
+                <p class= "health">HP:</p>
+                <p class= "attack">Attack: </p>
+            </div>
+            <div class="charCard" id="qui_gon" data-health="60" data-attack-power="5" data-counter-power="8">
+                <p class="charName"> Qui-Gon Jinn</p>
+                <img class="charImg"  src="assets/images/qui_gon.jpeg" alt="qui-gon jinn" width="300px" height="200px">
+                <p class= "health">HP:</p>
+                <p class= "attack">Attack: </p>
+            </div>
+            <div class="charCard" id="vader" data-health="100" data-attack-power="10" data-counter-power="20">
+                <p class="charName"> Darth Vader </p>
+                <img class="charImg"  src="assets/images/vader.jpg" alt="darth vader" width="300px" height="200px">
+                <p class= "health">HP:</p>
+                <p class= "attack">Attack: </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="chooseEnemy">
+        <p id="chooseEnemyPrompt">Choose Your Enemy: </p>
+        <hr>
+        <div class="enemyRow">
+
+        </div>
+    </div>
+
+    <div class="fightArena">
+
+        <p class="fightPrompt"> May the Force Be With You... </p>
+        <div class="fightBox">
+            <div id="playerCharacter">
+                
+            </div>
+        </div>
+        <div class="fightBox">
+            <button id="attackButton">ATTACK!</button>
+        </div>
+        <div class="fightBox">
+            <div id="opponent">   
+
+            </div>
+        </div>
+    </div>
+
+    <div class="resultBox">
+        
+    </div>
+
+    <div>
+        <button id="restartButton"> RESTART </button>
+    </div>
+
+
+
+    <script src="assets/javascript/game.js"></script>
+</body>
+</html>
