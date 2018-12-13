@@ -7,21 +7,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Bungee+Inline" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
 
 </head>
 <body>
+    <audio id="my_audio" src="star-wars-theme-song.mp3" loop="loop"></audio>
     <header>
-        <h1> Star Wars!</h1>
+        <h1></h1>
     </header>
 
     <div class="chooseChar">
-        <p id="chooseCharPrompt">Choose Your Character:</p>
-        <hr>
+        <p class="prompt">Choose Your Character:</p>
         <div class="fighterRow">
             <div class="charCard" id="maul" data-health="150" data-attack-power="15" data-counter-power="20">
                 <p class="charName"> Darth Maul </p>
-                <img class="charImg"  src="assets/images/darth-maul.jpg" alt="darth maul" width="300px" height="200px">
+                <img class="charImg" src="assets/images/darth-maul.jpg" alt="darth maul" width="300px" height="200px">
                 <p class= "health">HP: 150</p>
                 <p class= "attack">Attack: 15</p>
             </div>
@@ -47,8 +48,7 @@
     </div>
 
     <div class="chooseEnemy">
-        <p id="chooseEnemyPrompt">Choose Your Enemy: </p>
-        <hr>
+        <p class="prompt">Choose Your Enemy: </p>
         <div class="enemyRow">
 
         </div>
@@ -56,7 +56,8 @@
 
     <div class="fightArena">
 
-        <p class="fightPrompt"> May the Force Be With You... </p>
+        <p class="prompt"> May the Force Be With You... </p>
+        <hr>
         <div class="fightBox">
             <div id="playerCharacter">
                 
@@ -71,12 +72,13 @@
             </div>
         </div>
     </div>
-    <p class="defeated">Defeated Opponents</p>
+    
     <div class="deadOpponent">
-        
+       <p class="defeated">Defeated Opponents</p> 
+
     </div>
 
-    <div>
+    <div class="footer">
         <button id="restartButton"> RESTART </button>
     </div>
 

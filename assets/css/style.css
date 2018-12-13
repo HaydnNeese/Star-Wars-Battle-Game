@@ -1,56 +1,64 @@
 header {
-    text-align: center;
-    padding: 20px;
+    background-image: url(https://fontmeme.com/permalink/181213/480e7ca2290e6a70b14cd698a3aa1b5c.png);
+    background-size: cover;
+    padding: 80px;
+    border-left: solid rgb(244, 248, 0) 2px;
+    border-right: solid rgb(244, 248, 0) 2px;
+    border-top: solid rgb(244, 248, 0) 2px;
 }
 
 h1 {
-    margin-bottom: 15px;
     font-size: 60px;
-    background-color: rgb(8, 248, 236);
+    padding: 0px;
+    color: white;
 }
 
 hr {
-    margin-bottom: 20px;
+    margin-bottom: 0px;
+    border: solid rgb(244, 248, 0) 1.5px;
 }
 
 .chooseChar {
-    margin-left: 100px;
-
-}
-
-#chooseCharPrompt {
-    font-size: 40px;
+    background-image: url(https://binaryfortressdownloads.com/Download/WPF/Images/17776/WallpaperFusion-mass-effect-citadel-1680x480.jpg);
+    padding-top: 20px;
+    padding-bottom: 35px; 
+    border: solid rgb(244, 248, 0) 2px;
 }
 
 .fighterRow {
-
-    margin-bottom: 50px;
-    
+    margin-left: 100px;
 }
 
 .charImg {
     margin-right: 40px;
-}
-
-#maul {
-
-}
-
-#qui_gon {
- 
+    border-bottom: solid rgb(244, 248, 0) 2px;
+    border-top: solid rgb(244, 248, 0) 2px;
 }
 
 .chooseEnemy {
-    margin-left: 100px;
-    margin-top: 20px;
+    
+    background-image: url(https://vignette.wikia.nocookie.net/phineasandferb/images/5/55/DeathStarPFStarWars.png/revision/latest?cb=20140628170900);
+    border-left: solid rgb(244, 248, 0) 2px;
+    border-right: solid rgb(244, 248, 0) 2px;
+    border-bottom: solid rgb(244, 248, 0) 2px;
+   
 }
 
-#chooseEnemyPrompt {
-    font-size: 40px;
+.enemyRow {
+    margin-left: 230px;
+}
+
+.enemyRow .charCard {
+    margin-right: 40px;
+    margin-bottom: 20px;
 }
 
 .charCard {
     display: inline-block;
+    border: solid rgb(244, 248, 0) 2px;
+    width: 300px;
+    margin-left: 20px;
+    margin-top: 20px;
 }
 
 .charName {
@@ -60,6 +68,7 @@ hr {
     padding-bottom: 10px;
     margin-right: 40px;
     text-align: center;
+    width: 300px;
 }
 
 .health, .attack {
@@ -69,6 +78,7 @@ hr {
     padding-bottom: 10px;
     margin-right: 40px;
     text-align: center;
+    width: 300px;
 }
 
 .attack {
@@ -83,19 +93,25 @@ hr {
     background-color:  red;
 }
 
+.fightArena {
+    background-image: url(https://i.gifer.com/G0mZ.gif);
+    background-size: cover;
+    border-left: solid rgb(244, 248, 0) 2px;
+    border-right: solid rgb(244, 248, 0) 2px;
+    border-bottom: solid rgb(244, 248, 0) 2px;
+}
 
-.fightPrompt {
-    font-size: 40px;
+.prompt {
+    font-size: 60px;
     text-align: center;
-    background-color: red;
-    margin-top: 20px;
+    font-family: 'Bungee Inline', cursive;
+    color: rgb(244, 248, 0);
 }
 
 .fightBox {
     position: relative;
     width: 400px;
     height: 400px;
-    border: solid black 1px;
     display:inline-block;
     margin-top: 40px;
     margin-left: 80px;
@@ -105,15 +121,15 @@ hr {
 }
 
 .fightBox .charCard {
-    margin-top: 50px;
+    margin-top: 0px;
     margin-left: 50px;
 }
 
 #attackButton {
     position: absolute;
-    top: 45%;
-    left: 27%;
-    background-color: rgb(248, 24, 8);
+    top: 35%;
+    left: 26%;
+    background-color: rgb(244, 248, 0);
     font-size: 40px;
     border: groove black 3px;
 }
@@ -123,13 +139,20 @@ hr {
     text-align: center;
     background-color: black;
     color: white;
-    margin-top: 20px;
+    font-family: 'Bungee Inline', cursive;
+    color: rgb(244, 248, 0);
 }
 
 .deadOpponent .charCard {
     position: relative;
-    top: 30px;
-    left: 50px;
+    top: -20px;
+    left: 230px;
+}
+
+.deadOpponent {
+    background-image: url(http://dualmonitorswallpaper.com/wp-content/uploads/2018/02/star-wars-the-force-awakens-dual-monitor-background-1.jpg);
+    background-size: cover;
+    padding-bottom: 20px;
 }
 
 .deadOpponent .health, .deadOpponent .charName, .deadOpponent .attack, .deadOpponent .charImg {
@@ -150,4 +173,10 @@ hr {
     margin-top: 20px;
     left: 47.8%;
     margin-bottom: 20px;
+}
+
+.footer {
+    height: 100px;
+    background-image: url(https://vignette.wikia.nocookie.net/phineasandferb/images/5/55/DeathStarPFStarWars.png/revision/latest?cb=20140628170900);
+    background-size: cover;
 }

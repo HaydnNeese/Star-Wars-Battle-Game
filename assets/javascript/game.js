@@ -1,9 +1,14 @@
 //make undefined variables for the character stats
 var playerHealth, playerAttack, playerBaseAttack, enemyHealth, enemyAttack;
 
+window.onload = function() {
+    document.getElementById("my_audio").play();
+}
+
+
+
 //choosing player character
 $('body').on("click", '.chooseChar .charCard', function() {
-
     var currentElement = $(this); // assign a currentElement variable to be the image we click on
     $("#playerCharacter").append(currentElement); // send the image to the playerCharacter box
     console.log( $("#playerCharacter"));
@@ -39,7 +44,7 @@ $('#attackButton').on('click', function() {
     // Update display of player and then opponent.
     updateCharCardDisplay($('#playerCharacter .charCard'), playerHealth, playerAttack);
     updateCharCardDisplay($('#opponent .charCard'), enemyHealth, enemyAttack);
-   
+    
     //if player HP reaches 0: alert gameover, reset
     if (playerHealth <= 0) {
         alert('You lose! Try again!');//alert loss
